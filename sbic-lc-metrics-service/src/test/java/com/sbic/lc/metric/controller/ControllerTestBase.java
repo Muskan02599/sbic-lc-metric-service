@@ -7,18 +7,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sbic.lc.metric.config.ControllerTestConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.csrf;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
