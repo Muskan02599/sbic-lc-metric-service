@@ -1,5 +1,6 @@
 package com.sbic.lc.metric.controller;
 
+import com.sbic.lc.metric.aspect.Monitor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,9 @@ public class HomeController {
 	
 	@Autowired private Environment environment;
     
+
     @GetMapping("healthcheck")
+    @Monitor
     public String healthCheck() {
     	LOGGER.debug("Healthcheck requested");
         StringBuilder profile = new StringBuilder();
